@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "img": "/src/assets/project-1.png",
+      "name": "E-commerce Platform",
+      "description": "A full-stack e-commerce platform with React and Node.js.",
+      "github_link": "https://github.com/your-username/ecommerce",
+      "live_link": "https://ecommerce-example.netlify.app"
+    },
+    {
+      "id": 2,
+      "img": "/src/assets/project-2.jpg",
+      "name": "Portfolio Website",
+      "description": "A personal portfolio built with React and TailwindCSS.",
+      "github_link": "https://github.com/your-username/portfolio",
+      "live_link": "https://portfolio-example.netlify.app"
+    },
+    {
+      "id": 3,
+      "img": "/src/assets/project-3.jpg",
+      "name": "Task Manager App",
+      "description": "A task management app with Firebase integration.",
+      "github_link": "https://github.com/your-username/task-manager",
+      "live_link": "https://taskmanager-example.netlify.app"
+    },
+    {
+      "id": 4,
+      "img": "/src/assets/project-4.jpg",
+      "name": "Weather Dashboard",
+      "description": "A weather dashboard using OpenWeatherMap API.",
+      "github_link": "https://github.com/your-username/weather-dashboard",
+      "live_link": "https://weatherdashboard-example.netlify.app"
+    },
+    {
+      "id": 5,
+      "img": "/src/assets/project-5.png",
+      "name": "Blog CMS",
+      "description": "A CMS for managing blog posts with Markdown support.",
+      "github_link": "https://github.com/your-username/blog-cms",
+      "live_link": "https://blogcms-example.netlify.app"
+    }
+  ]
+  
