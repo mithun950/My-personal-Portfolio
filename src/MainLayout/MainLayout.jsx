@@ -7,6 +7,7 @@ import Skills from '../Components/Skills';
 import Hireme from '../Components/Hireme';
 import Project from '../Components/Project';
 import Contact from '../Components/Contact';
+import Footer from '../Components/Footer';
 
 const MainLayout = () => {
     return (
@@ -19,6 +20,7 @@ const MainLayout = () => {
             <Hireme></Hireme>
             <Project></Project>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };
