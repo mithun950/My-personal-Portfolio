@@ -6,11 +6,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MainLayout from './MainLayout/MainLayout.jsx';
+import ProjectDetails from './Components/ProjectDetails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
   },
+  {
+    path: "/project-details/:id",
+    element: <ProjectDetails></ProjectDetails>,
+  }
 ]);
 
 

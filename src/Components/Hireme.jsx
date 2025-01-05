@@ -1,6 +1,17 @@
 import React from "react";
 import hireMe from "../assets/hireMe.png";
+
 const Hireme = () => {
+  // WhatsApp Message Link
+  const handleWhatsApp = () => {
+    const phone = "01943252411"; // Replace with your WhatsApp number
+    const message = encodeURIComponent(
+      "Hello! I want to discuss some work opportunities with you."
+    );
+    const url = `https://wa.me/${phone}?text=${message}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="hireme" className="py-10 px-3 text-white">
       <div className="text-center">
@@ -12,19 +23,21 @@ const Hireme = () => {
       <div className="bg-gray-700 relative px-8 rounded-2xl py-5 lg:max-w-4xl mx-auto min-h-[24rem] mt-24 flex gap-6 lg:flex-row flex-col-reverse items-center">
         <div>
           <h2 className="text-2xl font-semibold">
-            Do you want any work from me?
+            Do you want to collaborate with me?
           </h2>
           <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta
-            soluta quos tempore eos accusamus cupiditate, amet in similique
-            sapiente obcaecati odio deleniti architecto corporis ratione.
-            Consequatur a quidem maiores!
+            If you have any projects or opportunities where you think I can
+            contribute, feel free to reach out. I’m always excited to work on
+            innovative projects, collaborate with great teams, and deliver
+            exceptional results.
           </p>
-          <button className="btn-primary mt-10">Say Hello</button>
+          <button onClick={handleWhatsApp} className="btn-primary mt-10">
+            Say Hello
+          </button>
         </div>
         <img
           src={hireMe}
-          alt=""
+          alt="Hire Me"
           className="lg:h-[32rem] h-80 lg:absolute bottom-0 -right-3 object-cover"
         />
       </div>

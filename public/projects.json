@@ -3,7 +3,7 @@
       "id": 1,
       "img": "/src/assets/project-1.png",
       "name": "E-commerce Platform",
-      "description": "A full-stack e-commerce platform with React and Node.js.",
+      "description": "A full-stack e-commerce platform built with React and Node.js. During development, faced server-side issues related to integrating the payment gateway, and spent several hours debugging API calls and ensuring data security. Encountered database synchronization issues when handling large-scale product inventories. It took around 3 weeks to complete this project, but the server-side issues caused a delay of 2 extra days, especially during testing and deployment phases. Debugging took longer than expected due to complex logic in the payment gateway integration.",
       "github_link": "https://github.com/your-username/ecommerce",
       "live_link": "https://ecommerce-example.netlify.app"
     },
@@ -11,7 +11,7 @@
       "id": 2,
       "img": "/src/assets/project-2.jpg",
       "name": "Portfolio Website",
-      "description": "A personal portfolio built with React and TailwindCSS.",
+      "description": "A personal portfolio website built with React and TailwindCSS. Faced challenges with responsive design adjustments for mobile devices. Server-related issues occurred when hosting through Netlify; sometimes the static files failed to load properly on certain networks, requiring multiple deployment attempts. The debugging process was time-consuming, and it took about 1 week to finish this project. Most issues were resolved with cache-clear and deployment tweaks. The server error while building the production version delayed the launch by an extra day.",
       "github_link": "https://github.com/your-username/portfolio",
       "live_link": "https://portfolio-example.netlify.app"
     },
@@ -19,7 +19,7 @@
       "id": 3,
       "img": "/src/assets/project-3.jpg",
       "name": "Task Manager App",
-      "description": "A task management app with Firebase integration.",
+      "description": "A task management app with Firebase integration. Encountered issues with Firebase authentication and real-time database syncing, especially during initial testing. Server-side lag and database consistency issues delayed progress for 2 days. Debugging Firebase SDK and resolving CORS issues took significant time. Managed to fix API calls but encountered latency issues when fetching real-time data, causing app freezes on high-traffic usage. This project took around 2 weeks to complete. Some server-side issues related to Firebase database integration persisted throughout the development process, causing several back-and-forth attempts to fix sync errors.",
       "github_link": "https://github.com/your-username/task-manager",
       "live_link": "https://taskmanager-example.netlify.app"
     },
@@ -27,7 +27,7 @@
       "id": 4,
       "img": "/src/assets/project-4.jpg",
       "name": "Weather Dashboard",
-      "description": "A weather dashboard using OpenWeatherMap API.",
+      "description": "A weather dashboard that uses the OpenWeatherMap API to provide live weather updates. Encountered difficulties in handling API rate limits and asynchronous data fetching. Server-related problems occurred when the API key expired unexpectedly, causing a 24-hour delay in development. Also, faced issues with caching and rendering data correctly on mobile devices, which caused some glitches on the front-end. It took around 5 days to complete this project. Server API-related issues persisted during development, as the API's server would occasionally go down, requiring me to adjust the error handling code.",
       "github_link": "https://github.com/your-username/weather-dashboard",
       "live_link": "https://weatherdashboard-example.netlify.app"
     },
@@ -35,7 +35,7 @@
       "id": 5,
       "img": "/src/assets/project-5.png",
       "name": "Blog CMS",
-      "description": "A CMS for managing blog posts with Markdown support.",
+      "description": "A CMS for managing blog posts with Markdown support. The main challenge was implementing the rich text editor and handling Markdown parsing. During development, encountered server-side issues with handling file uploads, especially when dealing with large image files for blog posts. Also, encountered CORS issues when connecting to the backend for storing posts. Took around 2 weeks to complete, with the first week spent mainly on debugging server communication and deployment. Server issues with handling large file uploads and unexpected crashes during peak times were some of the most frustrating parts of this project.",
       "github_link": "https://github.com/your-username/blog-cms",
       "live_link": "https://blogcms-example.netlify.app"
     }
