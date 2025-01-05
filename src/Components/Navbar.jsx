@@ -6,10 +6,11 @@ const Navbar = () => {
   const menuLinks = [
     { name: "HOME", link: "#home" },
     { name: "ABOUT", link: "#about" },
-    { name: "SKILLS", link: "#skills" },
+    { name: "SKILL", link: "#skills" },
     { name: "PROJECTS", link: "#projects" },
     { name: "CONTACT", link: "#contact" },
   ];
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const nav = document.querySelector("nav");
@@ -17,8 +18,6 @@ const Navbar = () => {
     });
   }, []);
 
-
-  
   return (
     <nav
       className={`fixed w-full left-0 top-0 z-[999] ${
@@ -31,10 +30,12 @@ const Navbar = () => {
             ME<span className="text-cyan-600">TH</span>UN
           </h4>
         </div>
+
+        {/* Desktop Menu */}
         <div
           className={` ${
             sticky ? "md:bg-white/0 bg-white" : "bg-white"
-          } text-gray-900 md:block hidden px-7 py-2 font-medium  rounded-bl-full`}
+          } text-gray-900 md:block hidden px-7 py-2 font-medium rounded-bl-full`}
         >
           <ul className="flex items-center gap-1 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
@@ -44,19 +45,23 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
+        {/* Hamburger Icon */}
         <div
           onClick={() => setOpen(!open)}
-          className={`z-[999]  ${
+          className={`z-[999] block lg:hidden ${
             open ? "text-gray-900" : "text-gray-100"
-          } text-3xl md:hidden m-5`}
+          } text-3xl cursor-pointer m-5`}
         >
           <ion-icon name="menu"></ion-icon>
         </div>
+
+        {/* Mobile Menu */}
         <div
           className={`md:hidden text-gray-900 absolute w-2/3 h-screen
-      px-7 py-2 font-medium bg-white top-0 duration-300 ${
-        open ? "right-0" : "right-[-100%]"
-      }`}
+          px-7 py-2 font-medium bg-white top-0 duration-300 ${
+            open ? "right-0" : "right-[-100%]"
+          }`}
         >
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
             {menuLinks?.map((menu, i) => (

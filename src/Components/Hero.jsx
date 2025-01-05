@@ -1,14 +1,14 @@
 import React from "react";
 import hero from "../assets/hero.png";
 import { FaDownload } from "react-icons/fa";
-import { IoLogoInstagram, IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
+import { IoPhonePortrait, IoLogoFacebook, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5"; // Updated icons
 
 const Hero = () => {
   const social_media = [
-    { icon: <IoLogoInstagram />, link: "https://www.instagram.com" },
-    { icon: <IoLogoFacebook />, link: "https://www.facebook.com" },
-    { icon: <IoLogoLinkedin />, link: "https://www.linkedin.com" },
-    { icon: <IoLogoTwitter />, link: "https://www.twitter.com" },
+    { icon: <IoPhonePortrait />, link: "tel:+8801943252411" }, // Phone icon with link for calling
+    { icon: <IoLogoFacebook />, link: "https://www.facebook.com/mithun.rashid.2024" },
+    { icon: <IoLogoLinkedin />, link: "https://www.linkedin.com/in/methunur-rashid-rony-a738ba317/" },
+    { icon: <IoLogoGithub />, link: "https://github.com/methunur-rashid" }, // Updated with GitHub link
   ];
 
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
-      <div className="flex-1 flex items-center justify-center h-full order-last  md:order-first">
+      <div className="flex-1 flex items-center justify-center h-full order-last md:order-first">
         <img src={hero} alt="" className="md:w-11/12 mx-auto h-full object-cover" />
       </div>
       <div className="flex-1">
@@ -26,7 +26,7 @@ const Hero = () => {
               Frontend Developer
               <br />
             </span>
-            Hi, I'm Methunur Rashid
+            <span className="block animate-pulse">Hi, I'm Methunur Rashid</span> {/* TailwindCSS animation */}
           </h1>
           <p className="md:text-xl text-sm md:leading-normal leading-5 mt-4 font-semibold text-gray-600">
             I specialize in building responsive, user-friendly websites and applications. With a keen eye for detail and a love for modern technologies, I create seamless digital experiences.

@@ -4,17 +4,17 @@ import Marquee from "react-fast-marquee"; // Import react-fast-marquee
 const Skills = () => {
   const skills = [
     { logo: "/src/assets/htmlicon.ico", level: "HTML5", count: 91 },
-    { logo: "/src/assets/68747470733a2cssicon.png", level: "CSS3", count: 90 },
-    { logo: "/src/assets/tailwind.svg.png", level: "Tailwind CSS", count: 90 },
-    { logo: "/src/assets/reacticon.png", level: "React JS", count: 80 },
-    { logo: "/src/assets/firebase.png", level: "Firebase", count: 85 },
-    { logo: "/src/assets/nodejs.webp", level: "Node JS", count: 85 },
-    { logo: "/src/assets/js.png", level: "JavaScript", count: 78 },
+    { logo: "../assets/68747470733a2cssicon.png", level: "CSS3", count: 90 },
+    { logo: "../assets/tailwind.svg.png", level: "Tailwind CSS", count: 90 },
+    { logo: "../assets/reacticon.png", level: "React JS", count: 80 },
+    { logo: "../assets/firebase.png", level: "Firebase", count: 85 },
+    { logo: "../assets/nodejs.webp", level: "Node JS", count: 85 },
+    { logo: "../assets/js.png", level: "JavaScript", count: 78 },
   ];
 
   const [progress, setProgress] = useState([]);
 
-  // Progress Bar Calculation
+  
   useEffect(() => {
     const intervals = skills.map((skill, index) => {
       return setInterval(() => {
@@ -24,7 +24,7 @@ const Skills = () => {
           if (updated[index] < skill.count) updated[index] += 2; // Speed up animation
           return updated;
         });
-      }, 10); // Adjust speed here (lower is faster)
+      }, 10); 
     });
 
     return () => intervals.forEach(clearInterval);

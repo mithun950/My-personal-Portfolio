@@ -8,6 +8,7 @@ import Hireme from '../Components/Hireme';
 import Project from '../Components/Project';
 import Contact from '../Components/Contact';
 import Footer from '../Components/Footer';
+import Education from '../Components/Education';
 
 const MainLayout = () => {
     return (
@@ -17,8 +18,9 @@ const MainLayout = () => {
             <Hero></Hero>
             <About></About>
             <Skills></Skills>
-            <Hireme></Hireme>
             <Project></Project>
+            <Hireme></Hireme>
+             <Education></Education>
             <Contact></Contact>
             <Footer></Footer>
         </div>
